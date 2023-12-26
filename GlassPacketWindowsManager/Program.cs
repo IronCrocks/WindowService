@@ -30,5 +30,5 @@ static void ShowArticle(string articleNumber)
     var windowThickness = WindowService.GetWindowThickness(articleNumber);
     var glassThickness = WindowService.GetGlassThickness(articleNumber);
 
-    Console.WriteLine(articleNumber + " | " + count + " | " + windowThickness + " | " + glassThickness);
+    Console.WriteLine($"{articleNumber,-45}|{count,3}|{windowThickness,3}|{glassThickness,3}");
 }
